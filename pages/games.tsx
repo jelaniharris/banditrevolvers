@@ -31,7 +31,7 @@ export default function About() {
                   <div>
                     <Image src={PurgatoryLogo} alt="Purgatory Layoffs Logo" />
                     <p>
-                      It's the dreaded all-staff meeting and Purgatory Inc's CEO
+                      It&apos;s the dreaded all-staff meeting and Purgatory Inc&apos;s CEO
                       Adam Synder announces that there must be layoffs even if
                       profits and revenue are sky-high.
                     </p>
@@ -43,7 +43,7 @@ export default function About() {
                       Become the #1 ranked employee in your department by outworking,
                       outmaneuvering, and <span className="line-through">beating</span> engaging your coworkers into submission.*
                     </p>
-                    <p>It's either them or you.</p>
+                    <p>It&apos;s either them or you.</p>
                     <LinkButton href="https://banditrevolvers.itch.io/purgatory-layoffs">
                       Free Download from Itch.io
                     </LinkButton>
