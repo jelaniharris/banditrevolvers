@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'cantarell', sans-serif;
   @apply text-white bg-neutral-800;
+}
+
+a.link-button {
+  @apply text-white;
 }

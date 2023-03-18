@@ -15,11 +15,11 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
   return (
     <>
       <PostTitle>{title}</PostTitle>
-      <div className="mx-auto flex flex-row items-center justify-between">
-        <div className="hidden md:block md:mb-12">
+      <div className="hidden md:flex mx-auto flex-row items-center justify-between p-3 mb-5 bg-neutral-900">
+        <div className="">
           <Avatar name={author.name} picture={author.picture} />
         </div>
-        <div className="mb-6 text-xl">
+        <div className="text-xl font-bold">
           <DateFormatter dateString={date} />
         </div>
       </div>

@@ -6,11 +6,11 @@ const Intro = () => {
   return (
     <section className="w-full mb-10">
       <div
-        className="relative overflow-hidden bg-no-repeat bg-cover"
+        className="relative md:bg-local bg-fixed bg-center overflow-hidden bg-no-repeat bg-cover"
         style={{
           backgroundPosition: "50%",
           backgroundImage: `url(${PurgatoryCoverImage.src})`,
-          height: "900px",
+          height: "600px",
         }}
       >
         <div className="absolute bottom-0 top-0 right-0 left-0 w-full h-full">

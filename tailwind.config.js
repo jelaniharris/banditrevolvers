@@ -23,6 +23,10 @@ module.exports = {
       letterSpacing: {
         tighter: '-.04em',
       },
+      flexGrow: {
+        "3": 3,
+        "1": 1,
+      },
       lineHeight: {
         tight: 1.2,
       },

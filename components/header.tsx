@@ -12,13 +12,19 @@ const Header = () => {
   return (
     <header className="bg-neutral-900">
       <Container>
-        <nav className="flex flex-wrap md:flex-nowrap items-center justify-between w-full py-12">
-          <div className="sitelogo mr-6">
-            <Link href="/" className="hover:text-red-600">
+        <nav
+          className={
+            "flex " +
+            (!navbarOpen ? "flex-nowrap" : "flex-wrap") +
+            " justify-between items-center w-full py-3 md:py-12"
+          }
+        >
+          <div className="sitelogo w-3/4 lg:w-auto">
+            <Link href="/">
               <Image src={siteLogo} alt="Bandit Revolvers Logo" />
             </Link>
           </div>
-          <div className="block md:hidden">
+          <div className="block lg:hidden">
             <button
               id="menu-button"
               className="flex items-center px-3 py-2 border rounded cursor-pointer text-gray-200 border-gray-400 hover:text-white hover:border-white"
@@ -34,11 +40,12 @@ const Header = () => {
               </svg>
             </button>
           </div>
+          {navbarOpen && <div className="lg:hidden basis-full h-0 my-1 "></div>}
           <div
             id="menu"
             className={
               (navbarOpen ? "flex" : "hidden") +
-              " text-2xl font-bold font-fjalla uppercase w-full md:flex md:items-center md:w-auto"
+              " text-2xl font-bold font-fjalla uppercase lg:flex lg:items-center lg:w-auto"
             }
           >
             <ul className="pt-4 md:flex md:justify-between md:pt-0">
@@ -46,9 +53,8 @@ const Header = () => {
                 <Link
                   href="/games"
                   className={
-                    (router.asPath == "/games"
-                      ? "bg-gray-700"
-                      : "") + " md:p-4 p-4 mr-2 block lg:mt-0 hover:bg-red-500"
+                    (router.asPath == "/games" ? "bg-red-500" : "") +
+                    " p-4 mr-4 block  hover:bg-gray-500"
                   }
                 >
                   Games
@@ -58,9 +64,8 @@ const Header = () => {
                 <Link
                   href="/blog"
                   className={
-                    (router.asPath == "/blog"
-                      ? "bg-gray-500"
-                      : "") + " md:p-4 p-4 mr-2 block lg:mt-0 hover:bg-red-500"
+                    (router.asPath == "/blog" ? "bg-red-500" : "") +
+                    " p-4 mr-4 block  hover:bg-gray-500"
                   }
                 >
                   Blog
@@ -70,9 +75,8 @@ const Header = () => {
                 <Link
                   href="/about"
                   className={
-                    (router.asPath == "/about"
-                      ? "bg-gray-500"
-                      : "") + " p-4 md:p-4 block lg:mt-0 hover:bg-red-500"
+                    (router.asPath == "/about" ? "bg-red-500" : "") +
+                    " p-4 block hover:bg-gray-500"
                   }
                 >
                   About

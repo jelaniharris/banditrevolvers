@@ -1,0 +1,52 @@
+.markdown {
+  @apply text-2xl leading-relaxed;
+  h1, h2, h3 {
+    @apply font-fjalla tracking-wide;
+  }
+
+  h2 {
+    @apply bg-gradient-to-r from-neutral-900 py-2 pl-2;
+  }
+
+  h3 {
+    @apply text-red-200;
+  }
+}
+
+.markdown a {
+  &:not(.link-button) {
+    @apply text-red-400 hover:text-red-300;
+  }
+}
+
+.markdown table {
+  @apply table-auto bg-neutral-500 border-collapse border w-full shadow-md;
+  th {
+    @apply font-semibold p-4 border-b text-left bg-neutral-600
+  }
+  td {
+    @apply p-4
+  }
+  th,td {
+    @apply border-2 border-stone-700;
+  }
+}
+
+.markdown img {
+  @apply w-full;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown h2 {
+  @apply text-4xl mt-12 mb-4 leading-snug;
+}
+
+.markdown h3 {
+  @apply text-3xl mt-8 mb-4 leading-snug;
+}
